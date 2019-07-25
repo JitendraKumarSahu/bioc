@@ -8,7 +8,7 @@ def main(project_id,
          cluster_name,
          create_new_cluster=True,
          global_region=True):
-
+	"""Test function to evaluate classes"""
 	cloudInfra = GcpCloud(project_id, zone, cluster_name, global_region)
 	cloudInfra.create_cluster();
 	cloudInfra.list_clusters_with_details()
